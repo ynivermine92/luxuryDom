@@ -1,0 +1,254 @@
+// Footer
+.footer {
+    background: #F8F8F8;
+    padding: 50px 0px 30px 0px;
+
+    &__wrapper {
+        display: flex;
+        gap: 168px;
+    }
+
+    &__details {
+        margin-top: 18px;
+    }
+
+    &__social {
+        margin-top: 58px;
+        display: flex;
+        gap: 20px;
+
+    }
+
+    &__social-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 90px 84px;
+    }
+
+    &__items {
+        max-width: 220px;
+    }
+
+    .contact {
+        max-width: 440px;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 15px 0;
+
+        line-height: 1.3em;
+
+    }
+
+    &__link {
+        color: gray;
+        font-size: 14px;
+        transition: all 0.5s;
+        display: flex;
+        gap: 10px;
+        @extend %MO-500;
+
+        &:hover {
+            transition: all 0.5s;
+            color: rgba(21, 119, 202, 1);
+        }
+    }
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+    }
+
+
+    &__item-title {
+        color: black;
+        @extend %M-600;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+
+
+
+    &__content {
+        display: flex;
+        gap: 90px 84px;
+        flex-wrap: wrap;
+
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bootom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 60px 0px 30px 0;
+    }
+
+    &__bootom-box {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    &__rotection {
+        font-size: 14px;
+        color: #505050;
+        @extend %MO-200;
+    }
+
+    &__item-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__mob-wrapper {
+        display: none;
+    }
+
+    &__link-catalog {
+        color: blue;
+        font-size: 14px;
+        border-bottom: 1px solid blue;
+        display: inline;
+        padding: 5px 0;
+    }
+}
+
+@media(max-width:1300px) {
+    .footer {
+        &__wrapper {
+
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &__details {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width:1100px) {
+    .footer {
+        padding: 20px;
+
+        &__inner {
+            display: flex;
+            gap: 40px 40px;
+        }
+
+        &__content {
+            gap: 40px 40px;
+        }
+
+        &__items {
+            max-width: 100%;
+        }
+
+
+
+        &__item-wrapper {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+
+    @media(max-width:1000px) {
+        .footer {
+            .contact {
+                display: none;
+            }
+
+            .footer__social {
+                display: none;
+            }
+
+            &__mob-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .contact {
+                    display: block;
+                    width: 100%;
+                }
+
+                .footer__social {
+                    display: flex;
+                }
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+            }
+
+            &__content {
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+
+
+    @media(max-width:668px) {
+        .footer {
+            padding: 50px 0px;
+
+            &__content {
+                flex-direction: column;
+                gap: 0px;
+            }
+
+            &__details {
+                margin-top: 0px;
+            }
+
+            .container {
+                padding: 0px 10px;
+            }
+
+            &__inner {
+                justify-content: space-between;
+            }
+            &__item{
+                margin: 10px 0;
+            }
+
+    
+
+        }
+
+    }
+
+    @media(max-width:500px) {
+        .footer {
+
+            &__link {
+                font-size: 12px;
+            }
+
+            &__social {
+                flex-direction: column;
+                gap: 15px 0;
+                margin-top: 34px;
+            }
+            
+        }
+
+    }
+
+
+}

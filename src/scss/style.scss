@@ -1,0 +1,15 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './global';
+@import './fonts';
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './home';
+@import './footer';
+
+
+
+main{
+    height: 150vh;
+}
